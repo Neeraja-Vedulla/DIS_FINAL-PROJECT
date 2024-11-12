@@ -1,0 +1,92 @@
+
+@{
+    ViewData["Title"] = "About Us";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/about.css" />
+}
+
+<!-- Navbar -->
+<nav>
+    <div class="nav-container">
+        <!-- Logo Section -->
+        <div class="logo-container">
+            <h1><span class="explore">Explore</span><span class="world">World</span></h1>
+            <h2>Where Every Journey Begins</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a asp-action="Index" asp-controller="Home">Home</a></li>
+            <li><a asp-action="Services" asp-controller="Home">Services</a></li>
+            <li><a asp-action="About" asp-controller="Home">About Us</a></li>
+            <li><a asp-action="Contact" asp-controller="Home">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Team Section -->
+<section class="team-section">
+    <h1>Meet Our Team</h1>
+    <div class="team-profiles">
+        <div class="team-member">
+            <a href="https://github.com/Neeraja-Vedulla" target="_blank">
+                <img src="~/images/team1.jpeg" alt="Team Member 1">
+            </a>
+            <h3>Neeraja Vedulla</h3>
+            <p class="caption">"The problem solver extraordinaire!"</p>
+        </div>
+        <div class="team-member">
+            <a href="https://github.com/nagaraju1177" target="_blank">
+                <img src="~/images/team2.jpeg" alt="Team Member 2">
+            </a>
+            <h3>Nagaraju Chattu</h3>
+            <p class="caption">"Your go-to for fresh ideas!"</p>
+        </div>
+        <div class="team-member">
+            <a href="https://github.com/ramyamuthineni23" target="_blank">
+                <img src="~/images/team3.jpg" alt="Team Member 3">
+            </a>
+            <h3>Ramyasri Muthineni</h3>
+            <p class="caption">"Master of all things in tech!"</p>
+        </div>
+        <div class="team-member">
+            <a href="https://github.com/SravaniYadavalliDIS" target="_blank">
+                <img src="~/images/team4.jpeg" alt="Team Member 4">
+            </a>
+            <h3>Sravani Yadavalli</h3>
+            <p class="caption">"Turning visions into reality!"</p>
+        </div>
+    </div>
+</section>
+
+<!-- ER Diagram Section -->
+<section class="section-two">
+    <h2>ER DIAGRAM</h2>
+    <div class="diagram-container">
+        <img src="~/images/er.png" alt="ER Diagram">
+    </div>
+</section>
+
+<!-- Travel and Tourism Insights -->
+<section class="colored-section section2">
+    <h2>Travel and Tourism Insights</h2>
+    <div class="visualization-container">
+        <div class="chart-wrapper" onclick="openChartModal('chart1')"><canvas id="chart1"></canvas></div>
+        <div class="chart-wrapper" onclick="openChartModal('chart2')"><canvas id="chart2"></canvas></div>
+        <div class="chart-wrapper" onclick="openChartModal('chart3')"><canvas id="chart3"></canvas></div>
+    </div>
+</section>
+
+<section class="colored-section section3">
+    <h2>Our Values</h2>
+    <p>Integrity, Passion, Innovation, and Customer Focus – these are the pillars of our success.</p>
+</section>
+
+<!-- Modal for Enlarged Chart View -->
+<div id="chartModal" class="chart-modal">
+    <span class="close-btn" onclick="closeChartModal()">×</span>
+    <canvas id="modalChart"></canvas>
+</div>
+
+<!-- Include Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="~/js/about.js"></script>

@@ -1,0 +1,328 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+/* Navbar */
+/* Navbar Styling */
+nav {
+    background-color: #8f94fb; /* Unique blue color for the navbar */
+    color: white;
+    padding: 0; /* Remove padding around the navbar */
+    margin: 0; /* Remove margin */
+}
+
+/* Logo Section Styling */
+.nav-container .logo-container h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    color: black;
+    display: inline;  /* Ensure the words are side by side */
+}
+
+.nav-container .logo-container .explore {
+    color: black;  /* Choose the color for 'Explore' */
+}
+
+.nav-container .logo-container .world {
+    color: white;  /* Choose the color for 'World' */
+}
+
+/* Tagline Styling */
+.nav-container .logo-container h2 {
+    font-size: small;
+    color: black;
+    font-style: italic;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold; /* Thick bold font */
+    text-transform: uppercase;
+}
+
+
+/* Team Section */
+.team-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.team-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.team-profiles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-member {
+    width: 200px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #2980b9;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    color: #2980b9;
+    margin: 0;
+}
+
+.caption {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 7px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Colored Sections */
+.colored-section {
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+}
+
+.section1 {
+    background-color: #3498db;
+}
+
+/* Section 2 Styling */
+.section-two {
+    background-color: #ffffff; /* White background for the section */
+    color: #333; /* Dark text for good contrast */
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a slight shadow */
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+/* Heading Styling */
+.section-two h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333; /* Dark color for the heading */
+    margin-bottom: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+/* ER Diagram Image Container */
+.diagram-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.diagram-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: adds rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow for a 3D effect */
+}
+
+
+/* Section 2 Styling with Visualizations */
+
+/* Section 2 Styling with Visualizations */
+
+/* Section 2 Styling with Visualizations */
+/* Section 2 Styling */
+.section2 {
+    background-color: #8f94fb; /* Light purple background for the section */
+    padding: 2rem;
+    text-align: center;
+}
+
+.section2 h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+/* Container for visualizations */
+.visualization-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Chart card styled as square mini tablets */
+.chart-card {
+    width: 150px; /* Square size for the charts */
+    height: 150px;
+    cursor: pointer;
+    position: relative;
+    background-color: grey; /* White background for charts */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Canvas inside chart cards */
+.chart-card canvas {
+    width: 100%;  /* Fully occupy the square space */
+    height: 100%;
+    padding: 10px;
+}
+
+/* Hover effect for chart cards */
+.chart-card:hover {
+    transform: scale(1.05); /* Slight scale-up effect */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+.chart-wrapper {
+    background-color: white; /* White background for each chart */
+    border-radius: 8px;      /* Rounded corners */
+    padding: 20px;           /* Adjust padding to create space around chart */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a floating effect */
+}
+
+
+
+/* Modal Styling for mini tablet look */
+
+.chart-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed positioning to keep it centered */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the modal */
+    width: 450px; /* Size similar to a tablet */
+    max-width: 90%; /* Responsive max-width */
+    background-color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* High z-index to appear on top */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Canvas inside modal for larger view */
+.chart-modal canvas {
+    width: 100%;  /* Adjust to fit within modal */
+    max-width: 400px; /* Constrain width for readability */
+    height: 300px;
+}
+
+/* Close button styling */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+
+
+.section3 {
+    background-color: #f39c12;
+}
+
+
+/* Footer */
+/** Footer Styling *
+/*/
+
+/* Footer Styling */
+footer {
+    background-color: #8f94fb;
+    color: #dcdcdc;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: black;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section li a:hover {
+    color: #3498db;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
