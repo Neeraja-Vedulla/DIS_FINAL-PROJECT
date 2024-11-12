@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+/* Navbar Styling */
+nav {
+    background-color: #8f94fb; /* Unique blue color for the navbar */
+    color: white;
+    padding: 0; /* Remove padding around the navbar */
+    margin: 0; /* Remove margin */
+}
+
+/* Logo Section Styling */
+.nav-container .logo-container h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    color: black;
+    display: inline;  /* Ensure the words are side by side */
+}
+
+.nav-container .logo-container .explore {
+    color: black;  /* Choose the color for 'Explore' */
+}
+
+.nav-container .logo-container .world {
+    color: white;  /* Choose the color for 'World' */
+}
+
+/* Tagline Styling */
+.nav-container .logo-container h2 {
+    font-size: small;
+    color: black;
+    font-style: italic;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold; /* Thick bold font */
+    text-transform: uppercase;
+}
+
+/* Contact Form Section */
+.contact-section {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.contact-form button {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #3498db;
+}
+
+/* Footer */
+/** Footer Styling *
+/*/
+
+/* Footer Styling */
+footer {
+    background-color: #8f94fb;
+    color: #dcdcdc;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: black;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section li a:hover {
+    color: #3498db;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
