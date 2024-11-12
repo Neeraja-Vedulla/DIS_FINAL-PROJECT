@@ -1,0 +1,418 @@
+/* Remove underline from all links */
+a {
+    text-decoration: none;
+}
+
+/* Optional: Ensure hover effects don't add an underline */
+a:hover {
+    text-decoration: none;
+}
+
+/* Navbar links - ensure underline is removed */
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Footer links - ensure underline is removed */
+.footer-section li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.footer-section li a:hover {
+    color: #3498db; /* Change color on hover without underlining */
+}
+
+
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #8f94fb; /* Unique blue color for the navbar */
+    color: white;
+    padding: 0; /* Remove padding around the navbar */
+    margin: 0; /* Remove margin */
+}
+
+/* Logo Section Styling */
+.nav-container .logo-container h1 {
+    font-size: xxx-large;
+    font-weight: bold;
+    color: black;
+    display: inline;  /* Ensure the words are side by side */
+}
+
+.nav-container .logo-container .explore {
+    color: black;  /* Choose the color for 'Explore' */
+}
+
+.nav-container .logo-container .world {
+    color: white;  /* Choose the color for 'World' */
+}
+
+/* Tagline Styling */
+.nav-container .logo-container h2 {
+    font-size: medium;
+    color: black;
+    font-style: italic;
+}
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold; /* Thick bold font */
+    text-transform: uppercase;
+}
+
+/* Slider Styling */
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 70vh; /* Adjust this value for desired height; 70vh makes it less tall */
+    overflow: hidden;
+    margin: 0;
+    padding: 0;}
+
+/* Container for slider items */
+.slider-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/*.slider {
+    display: flex;
+    transition: transform 1s ease;
+    margin: 0; /* Ensure no margin }*/
+
+/* Image styling remains the same */
+.slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay text styling */
+.slider-text {
+    position: absolute;
+    bottom: 20px; /* Position text at the bottom of the image */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    font-size: 3rem; /* Large font size */
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds depth effect */
+    background: rgba(0, 0, 0, 0.3); /* Optional: slight background for contrast */
+    padding: 10px 20px; /* Padding around text */
+    border-radius: 8px; /* Rounded corners on the background */
+}
+
+/* Section Styling */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Section Styling */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.section-one {
+    background-color: #8f94fb; /* Purple */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Space between images */
+    height: 400px; /* Set a fixed height for this section */
+    text-align: center;
+}
+
+/* Styling for each country image */
+.country-image {
+    position: relative;
+    width: 30%; /* Adjust the width of each image */
+    height: 100%; /* Fill the section height */
+    overflow: hidden;
+    border-radius: 10px; /* Optional: add rounded corners */
+}
+
+.country-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fully covers the container */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+}
+
+/* Add text on top of the images */
+.country-image .country-name {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds depth and visibility */
+    letter-spacing: 1px;
+}
+
+/* Hover effect to scale the images */
+.country-image:hover img {
+    transform: scale(1.1); /* Zoom effect when hovering */
+}
+
+
+.section-one {
+   background-color: #8f94fb; /* Rich teal-blue-gray color */
+    color: #f0f0f0; /* Light text color for contrast */
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Section 3 Styling */
+.section-three {
+    background-color: #8f94fb; /* Deep amber/burnt orange */
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+    margin-top: 2rem;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon Styling */
+.card-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: #d35400;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .card-icon {
+    opacity: 1; /* Icon becomes visible on hover */
+}
+
+/* Title and Description */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-description {
+    font-size: 1rem;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+/* Testimonials Slider */
+
+/* Testimonials Slider */
+/* Container for the testimonials */
+/* Container for the testimonials */
+/* Adjust the overall container for the "What Our Customers Say" section */
+/* Adjust the overall container for the "What Our Customers Say" section */
+/* Adjust the overall container for the "What Our Customers Say" section */
+.testimonials {
+    text-align: center;
+    padding: 2rem 1rem; /* Compact section */
+    background-color: #f9f9f9;
+    margin-top: 0; /* Remove excessive space at the top */
+}
+
+/* Header for the section */
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-weight: bold;
+}
+
+/* New wide rectangle container */
+.rectangle-container {
+    width: 90%; /* Adjust width to fit better */
+    max-width: 1200px; /* Optional max width for larger screens */
+    height: 300px; /* Adjust height for better visibility */
+    margin: 0 auto; /* Center it horizontally */
+    background-color: #8f94fb;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3); /* Depth effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for the rectangle */
+.rectangle-container:hover {
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Content inside the rectangle (reviews container) */
+.rectangle-content {
+    font-size: 1.5rem; /* Increased font size */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-weight: bold; /* Bold text */
+    text-align: center;
+    padding: 1.5rem; /* Add more padding for text readability */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+/* Styling for each review */
+.review {
+    display: none; /* Initially hide all reviews */
+    font-style: italic; /* Name in italics */
+    font-weight: bold; /* Bold text for review content */
+}
+
+.review.active {
+    display: block; /* Display active review */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .rectangle-container {
+        height: 250px; /* Adjust height for smaller screens */
+    }
+
+    .testimonials h2 {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #8f94fb;
+    color: #dcdcdc;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: black;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section li a:hover {
+    color: #3498db;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}

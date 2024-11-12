@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ExploreWorld</title>
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    @RenderSection("Styles", required: false)
+</head>
+<body class="@ViewData["BodyClass"]">
+    <!-- Navbar and Main Content Sections go here -->
+    @RenderBody()
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>ExploreWorld is dedicated to providing premium travel experiences. From personalized travel planning to seamless transport arrangements, we ensure every trip is memorable.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a asp-action="Index" asp-controller="Home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a asp-action="Services" asp-controller="Home">Services</a></li>
+                    <li><a asp-action="Contact" asp-controller="Home">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>123 Travel Lane, Wander City, Earth 12345</p>
+                <p>Email: info@exploreworld.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ExploreWorld. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

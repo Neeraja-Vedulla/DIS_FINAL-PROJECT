@@ -1,0 +1,67 @@
+
+@{
+    ViewData["Title"] = "Home";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/home.css" />
+}
+
+<!-- Navbar -->
+<nav>
+    <div class="nav-container">
+        <!-- Logo Section -->
+        <div class="logo-container">
+            <h1><span class="explore">Explore</span><span class="world">World</span></h1>
+            <h2>Where Every Journey Begins</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a asp-action="Index" asp-controller="Home">Home</a></li>
+            <li><a asp-action="Services" asp-controller="Home">Services</a></li>
+            <li><a asp-action="About" asp-controller="Home">About Us</a></li>
+            <li><a asp-action="Contact" asp-controller="Home">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Image Slider Section -->
+<section class="slider-container">
+    <div class="slider">
+        <div class="slider-item">
+            <img src="~/images/about1.jpg" alt="Image 1" class="slider-image">
+        </div>
+        <div class="slider-item">
+            <img src="~/images/about2.jpg" alt="Image 2" class="slider-image">
+        </div>
+        <div class="slider-item">
+            <img src="~/images/about3.jpg" alt="Image 3" class="slider-image">
+        </div>
+        <div class="slider-item">
+            <img src="~/images/about4.jpg" alt="Image 4" class="slider-image">
+        </div>
+    </div>
+</section>
+
+<!-- Content sections -->
+<section id="destinations" class="section-one">
+    <div class="country-image"><a asp-action="Services"><img src="~/images/francewide.jpg" alt="France"><div class="country-name">France</div></a></div>
+    <div class="country-image"><a asp-action="Services"><img src="~/images/irelandwide.jpg" alt="Ireland"><div class="country-name">Ireland</div></a></div>
+    <div class="country-image"><a asp-action="Services"><img src="~/images/singaporewide.jpg" alt="Singapore"><div class="country-name">Singapore</div></a></div>
+</section>
+
+<section class="section-three">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+        <div class="card"><div class="card-icon">✈️</div><div class="card-title">Travel Planning</div><p>Customized travel itineraries.</p></div>
+        <div class="card"><div class="card-icon">🏨</div><div class="card-title">Accommodation</div><p>Top-rated hotels and unique stays.</p></div>
+        <div class="card"><div class="card-icon">🚗</div><div class="card-title">Transportation</div><p>Hassle-free transport arrangements.</p></div>
+        <div class="card"><div class="card-icon">🌐</div><div class="card-title">Guided Tours</div><p>Experienced guides at every stop.</p></div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="rectangle-container">
+        <div class="rectangle-content"><div class="review active"><p>"This service is amazing!" <br><span>- John Doe</span></p></div></div>
+    </div>
+</section>
+<script src="~/js/home.js"></script>
